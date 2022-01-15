@@ -18,7 +18,8 @@ class Config:
 @dataclass
 class LocalConfig(Config):
     PROJ_RELOAD: bool = True
-    DB_URL: str = "mysql+pymysql://root@localhost/notification_api?charset=utf8mb4"
+    DB_URL: str = "mysql+pymysql://auth_test@localhost:3306/notification_api?charset=utf8mb4"
+    #mysql+pymysql://[계정ID]:[패스워드]@[DB접속 IP]:[포트]/[DB명(schema)]]?charset=utf8mb4
 
 
 @dataclass

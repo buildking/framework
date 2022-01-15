@@ -8,7 +8,6 @@ from app.common.config import conf
 from app.routes import index, auth
 
 
-
 def create_app():
     """
     앱 함수 실행
@@ -18,7 +17,6 @@ def create_app():
     app = FastAPI()
     conf_dict = asdict(c)
     db.init_app(app, **conf_dict)
-
     # 데이터 베이스 이니셜라이즈
 
     # 레디스 이니셜라이즈
